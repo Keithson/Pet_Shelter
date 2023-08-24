@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Pet Shelter</title>
+</head>
+<body>
+    <div class="container">
+
+        <!--********************    Header     ******************** -->
+        <div id="header">
+            <div id="header-top">
+                <div id="nav-left">
+                    <img src="./images/assets/heart-light.png" alt="image of heart" id="heart">
+                    <h1>Pet Shelter</h1>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#">Find a Pet</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><button onclick= "btnRemove()" id="btn-donate">Donate</button></li>                                               
+                </ul>      
+            </div>
+            <form id="frm-search-pet" >
+                <div id="group-left" class="group">
+                    <p>I'm looking for a...</p>
+                    <div class="sub-group">
+                        <img id="img-paw-head" src="./images/assets/paw-light.png" alt="">
+                        <select onchange="petSelected(this.value)"    name="pet-select" id="pet-selector">
+                            <option value="Any">Any Pet</option>
+                            <option value="Dog">Dog</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Lizard">Lizard</option>
+                            <option value="Fish">Fish</option>
+                            <option value="Pig">Pig</option>
+                            <option value="Hamster">Hamster</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div id="group-right" class="group">
+                    <p>in or near...</p>
+                    <div class="sub-group">
+                        <img id="img-pin-head" src="./images/assets/pin-light.png" alt="">
+                        <input id="pet-location" type="text" placeholder="  City or Zip Code">
+                    </div>
+                </div>
+                <button  id="btn-search-pet" type="submit"> Find your new best friend </button>
+            </form>
+
+        </div>
+        <!--********************    Main Body    ******************** -->
+            <div id="main-display">
+                <div class="pet-info">
+                    <img src="./images/assets/pepper.jpg" alt="" class="pet-image">
+                    <div class="pet-details">
+                        <h2 class="pet-name">Pepper</h2>
+                        <p class="description">Pepper is a slightly shy grey tabby, but she really loves showing her human affection</p>
+                    </div>
+                    <div class="pet-likes">
+                        <p class="likes-counter" ><span id="like1">0</span> petting(s)</p>
+                        <button onclick="addLike('like1')" id="btn1-like" class="btn-likes">Pet Pepper</button>
+                    </div>
+                </div>
+                <div class="pet-info">
+                    <img src="./images/assets/bruce.jpg" alt="" class="pet-image">
+                    <div class="pet-details">
+                        <h2 class="pet-name">Bruce</h2>
+                        <p class="description">Bruce is a loyal companion. He likes long walks and cold weather</p>
+                    </div>
+                    <div class="pet-likes">
+                        <p class="likes-counter" ><span id="like2">0</span> petting(s)</p>
+                        <button onclick="addLike('like2')" id="btn2-like" class="btn-likes">Pet Bruce</button>
+                    </div>
+                </div>
+            
+            
+                <div class="pet-info">
+                    <img src="./images/assets/oscar.jpg" alt="" class="pet-image">
+                    <div class="pet-details">
+                        <h2 class="pet-name">Oscar</h2>
+                        <p class="description">Oscar is bright, energetic and friendly. He is looking for a good home.</p>
+                    </div>
+                    <div class="pet-likes">
+                        <p class="likes-counter"><span id="like3">0</span  > petting(s)</p>
+                        <button onclick="addLike('like3')" id="btn3-like" class="btn-likes">Pet Oscar</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

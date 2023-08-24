@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+/*Header and Navigation styling */
+#header{
+   
+    background-color: #119b9d ;
+    padding: 1% 30%;
+    outline: auto;
+    border-bottom: 2px solid black ;
+}
+
+h1{
+    font-family: 'ADLaM Display', cursive;
+    
+}
+
+#header-top{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;  
+    color: white;
+}
+
+#nav-left{
+    display: flex;
+    width: 30%;
+    justify-content:space-between ;
+    align-items: center;
+
+}
+
+#nav-left img{
+width: 20%;
+
+}
+
+#nav-menu{
+
+    display:flex;
+    width: 50%;
+    justify-content: space-between;
+    text-decoration: none;
+    }
+#nav-menu li{
+
+    list-style: none;
+   
+}
+
+#nav-menu a{
+    list-style: none;
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+#btn-donate{
+
+    background-color: white;
+    color:#9900ff ;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: 3px solid #9900ff;
+    
+ 
+}
+
+
+
+#frm-search-pet{
+    display: flex;
+    justify-content: space-between;
+    align-items:last baseline;    
+    padding:20px 0;
+    width: 100%;
+}
+
+
+#group-left,#group-right{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    justify-content: space-between;
+    width: 28%;
+    color: white;
+    /* align-items: baseline; */
+    font-weight: bold;  
+}
+
+
+
+
+.sub-group{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 5px 0;
+  
+  
+}
+
+#btn-search-pet{
+    width: 40%;
+    height: 35px;
+    color: white;
+    background-color: #9900ff;
+    font-size: larger;
+    border: 3px solid black;
+    box-shadow: 2px 4px black;
+}
+
+
+.sub-group img{
+    height:33px;
+}
+
+#pet-location{
+    width: 80%;
+  
+    
+   
+}
+#pet-selector{
+    width: 75%;
+    
+}
+
+/*Main display for results and pet interaction  */
+
+#main-display{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 30%;
+}
+
+.pet-info{
+    display: flex;
+    background-color: #eeedef;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    align-content:  center;
+    padding: 12px;
+    justify-content: space-between; 
+   
+    
+}
+
+.pet-details{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width:46%;
+    margin-left: 3px;
+  
+
+}
+
+
+.pet-info img{
+
+    width: 15%;
+  
+}
+
+
+.pet-name{
+
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.description{
+   
+    font-size: 15px;
+   
+
+}
+
+.pet-likes{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    text-align: right;
+  
+    width: 35%;
+ 
+    
+  
+}
+.btn-likes{
+    width: 100%;
+    background-color: #17cfd1;
+    color: white;
+    padding: 5px 0;
+    font-weight: bold;
+    box-shadow: 2px 3px black;
+    
+}
+
+.pet-info:hover{
+
+    background-color: #dddddd;
+}
